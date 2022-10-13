@@ -86,13 +86,18 @@ function renderGlutenFreeCrust() {
 
 function renderButtons() {
   // Iteration 3: add/remove the class "active" of each `<button class="btn">`
- let node1 = document.querySelectorAll(".btn");
- console.log(node1);
+ let pepperoni = document.querySelector(".btn-pepperoni")
+ let mushrooms = document.querySelector(".btn-mushrooms")
+ let greenPeppers = document.querySelector(".btn-green-peppers")
+ let sauce = document.querySelector(".btn-sauce")
+ let crust = document.querySelector(".btn-crust")
+ pepperoni.classList.toggle("active", state.pepperoni);
+ mushrooms.classList.toggle("active", state.mushrooms);
+ greenPeppers.classList.toggle("active", state.greenPeppers);
+ sauce.classList.toggle("active", state.whiteSauce);
+ crust.classList.toggle("active", state.glutenFreeCrust);
  
- for(let Index = 0; Index < node1.length; Index ++) {
-  const nodeElement = node1[Index];
-  if (nodeElement.)
- }
+}
 
 
 function renderPrice() {
